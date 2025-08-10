@@ -1,5 +1,7 @@
-fastapi
-uvicorn[standard]
-pandas
-scikit-learn
-joblib
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn  # เช่น 1.5.1
+joblib==1.4.2
+python-dotenv==1.0.1
