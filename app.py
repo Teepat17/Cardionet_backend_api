@@ -9,8 +9,8 @@ from typing import Optional, Dict, Any, Literal
 
 # ---------------- Paths & load models ----------------
 HERE = Path(__file__).resolve().parent
-DETAILED_MODEL_PATH = Path(os.getenv("DETAILED_MODEL_PATH", HERE / "heart_detailed_pipeline.pkl"))
-COARSE_MODEL_PATH   = Path(os.getenv("COARSE_MODEL_PATH",   HERE / "heart_coarse_pipeline.pkl"))
+DETAILED_MODEL_PATH = Path(os.getenv("DETAILED_MODEL_PATH", HERE / "hgb_monotone_full.pkl"))
+COARSE_MODEL_PATH   = Path(os.getenv("COARSE_MODEL_PATH",   HERE / "hgb_monotone_coarse.pkl"))
 
 if not DETAILED_MODEL_PATH.exists():
     raise FileNotFoundError(f"Missing detailed model at {DETAILED_MODEL_PATH}")
